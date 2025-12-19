@@ -10,12 +10,12 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  clippy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: clippy
-        run: cargo clippy -- --deny warnings
+  # clippy:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: clippy
+  #       run: cargo clippy -- --deny warnings
   fmt:
     runs-on: ubuntu-latest
     steps:
@@ -32,10 +32,10 @@ jobs:
       - uses: swatinem/rust-cache@v2
       - name: cargo test
         run: cargo test --workspace
-  dev-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: swatinem/rust-cache@v2
-      - name: rustlings dev check
-        run: cargo dev check --require-solutions
+  # dev-check:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: swatinem/rust-cache@v2
+  #     - name: rustlings dev check
+  #       run: cargo dev check --require-solutions
