@@ -34,10 +34,10 @@ impl TryFrom<(i16, i16, i16)> for Color {
             u8::try_from(tuple.1),
             u8::try_from(tuple.2),
         ) else {
-            return Err(IntoColorError::IntConversion)
+            return Err(IntoColorError::IntConversion);
         };
 
-        Ok(Self {red, green, blue})
+        Ok(Self { red, green, blue })
     }
 }
 

@@ -11,7 +11,6 @@ fn animal_habitat(animal: &str) -> &str {
         0
     };
 
-
     // Don't change the expression below!
     if identifier == 1 {
         "Beach"

@@ -21,7 +21,7 @@ struct ReportCard<T> {
 }
 
 // TODO: Adjust the impl block as described above.
-impl<T: Display>  ReportCard<T> {
+impl<T: Display> ReportCard<T> {
     fn print(&self) -> String {
         format!(
             "{} ({}) - achieved a grade of {}",

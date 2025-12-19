@@ -7,9 +7,9 @@ fn bigger(a: i32, b: i32) -> i32 {
     // - another function call
     // - additional variables
     match a.cmp(&b) {
-        Ordering::Less    => b,
+        Ordering::Less => b,
         Ordering::Greater => a,
-        Ordering::Equal   => a,
+        Ordering::Equal => a,
     }
 }
 
